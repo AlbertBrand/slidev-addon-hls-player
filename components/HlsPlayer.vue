@@ -10,9 +10,9 @@ import Hls from "hls.js";
 
 interface Props {
   src: string;
-  previewImageSrc: string;
-  muted: boolean;
-  controls: boolean;
+  previewImageSrc?: string;
+  muted?: boolean;
+  controls?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
