@@ -2,6 +2,6 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   optimizeDeps: {
-    include: ["slidev-addon-tldraw > hls.js"],
+    include: ["slidev-addon-hls-player > hls.js"],
   },
 });
