@@ -1,0 +1,58 @@
+{
+  "name": "slidev-addon-hls-player",
+  "version": "0.1.0",
+  "description": "HLS Player addon for Slidev",
+  "type": "module",
+  "scripts": {
+    "dev": "slidev example.md",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png",
+    "lint": "eslint . --fix",
+    "format": "prettier . --write",
+    "test": "vitest"
+  },
+  "keywords": [
+    "slidev-addon",
+    "slidev",
+    "hls",
+    "video",
+    "player"
+  ],
+  "files": [
+    "components",
+    "vite.config.ts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@slidev/cli": "^51.3.0",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/types": "^51.3.0",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^16.0.0",
+    "jsdom": "^26.0.0",
+    "playwright-chromium": "^1.50.1",
+    "prettier": "^3.5.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.1.1",
+    "vitest": "^3.0.6"
+  },
+  "peerDependencies": {
+    "react-dom": "^18.2.0 || ^19.0.0",
+    "vue": "^3.4.33"
+  },
+  "dependencies": {
+    "@slidev/client": "^51.3.0",
+    "@unhead/vue": "^2.0.10",
+    "@vueuse/core": "^12.7.0",
+    "hls.js": "^1.6.5"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
+}
