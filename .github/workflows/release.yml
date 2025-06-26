@@ -38,9 +38,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Generate changelog
-        run: pnpm git-cliff --latest --prepend CHANGELOG.md
-
       - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -48,6 +45,9 @@ jobs:
 
       - name: Bump version
         run: pnpm version ${{ github.event.inputs.version }}
+
+      - name: Generate changelog
+        run: pnpm git-cliff --latest --prepend CHANGELOG.md
 
       - name: Commit changelog
         run: |
