@@ -1,6 +1,6 @@
 {
   "name": "slidev-addon-hls-player",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "HLS Player addon for Slidev",
   "type": "module",
   "scripts": {
