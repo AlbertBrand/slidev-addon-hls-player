@@ -10,7 +10,8 @@
     "screenshot": "slidev export example.md --format png",
     "lint": "eslint . --fix",
     "format": "prettier . --write",
-    "test": "vitest"
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [
     "slidev-addon",
@@ -32,6 +33,9 @@
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vue/test-utils": "^2.4.6",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
