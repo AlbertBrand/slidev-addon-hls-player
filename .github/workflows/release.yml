@@ -46,13 +46,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Bump version
+        run: pnpm version ${{ github.event.inputs.version }}
+
       - name: Commit changelog
         run: |
           git add CHANGELOG.md
           git commit -m "docs: update changelog"
-
-      - name: Bump version
-        run: pnpm version ${{ github.event.inputs.version }}
 
       - name: Push changes
         run: |
