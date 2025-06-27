@@ -12,7 +12,6 @@
     "format": "prettier . --write",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
-    "commitlint": "commitlint --edit",
     "prepare": "husky"
   },
   "keywords": [
