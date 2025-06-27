@@ -51,13 +51,13 @@ You can provide a preview image that will be displayed before the video starts p
 
 ## Component Props
 
-| Prop              | Type      | Default | Description                                         |
-| ----------------- | --------- | ------- | --------------------------------------------------- |
-| `src`             | `string`  | `''`    | The URL of the HLS stream (`.m3u8`).                |
-| `previewImageSrc` | `string`  | `''`    | The URL of a preview image to show before playback. |
-| `autoplay`        | `boolean` | `false` | Whether to start playing the video automatically.   |
-| `loop`            | `boolean` | `false` | Whether to loop the video.                          |
-| `muted`           | `boolean` | `false` | Whether to mute the video.                          |
+| Prop              | Type      | Default  | Description                                         |
+| ----------------- | --------- | -------- | --------------------------------------------------- |
+| `src`             | `string`  | Required | The URL of the HLS stream (ends in `.m3u8`).        |
+| `previewImageSrc` | `string`  | `''`     | The URL of a preview image to show before playback. |
+| `autoplay`        | `boolean` | `false`  | Whether to start playing the video automatically.   |
+| `loop`            | `boolean` | `false`  | Whether to loop the video after it ends.            |
+| `muted`           | `boolean` | `false`  | Whether to start the video muted.                   |
 
 ## License
 
